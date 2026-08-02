@@ -32,7 +32,10 @@ const features = [
 
 export default function WhyChoose() {
   return (
-    <section className="bg-[#07101F] py-28 text-white">
+    <section
+    id="why"
+    className="bg-[#050505] py-28 text-white"
+    >
       <div className="max-w-7xl mx-auto px-8">
 
         <motion.h2
@@ -58,7 +61,7 @@ export default function WhyChoose() {
             >            
               <Card>
 
-                <div className="text-cyan-400 mb-5">
+                <div className="text-[#D4AF37] mb-5">
                   {item.icon}
                 </div>
           

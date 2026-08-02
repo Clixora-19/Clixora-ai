@@ -27,8 +27,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-28 px-8 bg-[#050816] text-white">
-
+    <section
+    id="services"
+    className="py-28 px-8 bg-[#050505] text-white"
+    >
       <div className="max-w-7xl mx-auto">
 
         <motion.h2
@@ -54,7 +56,7 @@ export default function Services() {
               whileHover={{ scale: 1.03 }}
             >
               <Card>
-                <div className="text-cyan-400 mb-6">
+                <div className="text-[#D4AF37] mb-6">
                   {service.icon}
                 </div>
 
