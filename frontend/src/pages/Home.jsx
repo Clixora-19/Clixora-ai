@@ -1,3 +1,6 @@
+import ScrollProgress from "../components/ScrollProgress";
+import CTA from "../components/CTA";
+import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import About from "../components/About";
@@ -12,6 +15,7 @@ import Process from "../components/Process";
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <Services />
@@ -20,6 +24,8 @@ export default function Home() {
       <About />
       <Portfolio />
       <Testimonials />
+      <Faq />
+      <CTA />
       <Contact />
       <Footer />
     </>
