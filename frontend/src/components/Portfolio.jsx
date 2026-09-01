@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Card from "./ui/Card";
+import Card from "./Card";
 
 const projects = [
   {
@@ -54,7 +54,7 @@ export default function Portfolio() {
               }}
             >
 
-              <Card>
+              <Card delay={index * 0.1}>
 
                 <div className="h-44 rounded-2xl bg-gradient-to-br from-[#1c1c1c] to-[#0b0b0b] border border-[#D4AF37]/20 flex items-center justify-center">
 

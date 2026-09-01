@@ -1,3 +1,5 @@
+import TechStack from "../components/TechStack";
+import Stats from "../components/Stats";
 import ScrollProgress from "../components/ScrollProgress";
 import CTA from "../components/CTA";
 import Faq from "../components/Faq";
@@ -18,14 +20,16 @@ export default function Home() {
       <ScrollProgress />
       <Navbar />
       <Hero />
+      <TechStack />
       <Services />
       <WhyChoose />
+      {/* <Stats /> */}
       <Process />
-      <About />
+      {/*<About />*/}
       <Portfolio />
       <Testimonials />
       <Faq />
-      <CTA />
+      {/*<CTA />*/}
       <Contact />
       <Footer />
     </>

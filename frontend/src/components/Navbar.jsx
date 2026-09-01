@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import Button from "./ui/Button";
+import Button from "./Button";
 
 export default function Navbar() {
   return (
@@ -11,7 +12,7 @@ export default function Navbar() {
 
         {/* Logo */}
 
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
 
   <img
     src={logo}
@@ -30,41 +31,42 @@ export default function Navbar() {
     </p>
   </div>
 
-</div>
+</Link>
 
         {/* Menu */}
 
         <ul className="hidden md:flex gap-10 text-white">
 
-          <a href="#services">
+       
+          <Link to="/">
           <li className="hover:text-[#D4AF37] cursor-pointer transition">
-          Services
+            Home
           </li>
-          </a>
+          </Link>
 
-          <a href="#solutions">
+          <Link to="/services">
+          <li className="hover:text-[#D4AF37] cursor-pointer transition">
+            Services
+          </li>
+          </Link>
+
+          <Link to="/solutions">
           <li className="hover:text-[#D4AF37] cursor-pointer transition">
             Solutions
           </li>
-          </a>
+          </Link>
           
-          <a href="#portfolio">
+          <Link to="/portfolio">
           <li className="hover:text-[#D4AF37] cursor-pointer transition">
             Portfolio
           </li>
-          </a>
+          </Link>
 
-          <a href="#pricing">
-          <li className="hover:text-[#D4AF37] cursor-pointer transition">
-            Pricing
-          </li>
-          </a>
-
-          <a href="#contact">
+          <Link to="/contact">
           <li className="hover:text-[#D4AF37] cursor-pointer transition">
             Contact
           </li>
-          </a>
+          </Link>
 
         </ul>
 

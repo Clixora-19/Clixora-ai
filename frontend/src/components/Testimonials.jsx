@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Card from "./ui/Card";
+import Card from "./Card";
 
 const testimonials = [
   {
@@ -50,7 +50,7 @@ export default function Testimonials() {
               key={index}
               whileHover={{ y: -8, scale: 1.03 }}
             >
-              <Card>
+              <Card delay={index * 0.1}>
 
                 <div className="text-[#D4AF37] text-3xl mb-5">
                   ★★★★★

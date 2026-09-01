@@ -1,4 +1,4 @@
-import Card from "./ui/Card";
+import Card from "./Card";
 import { motion } from "framer-motion";
 import {
   FiZap,

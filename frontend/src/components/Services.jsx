@@ -1,4 +1,4 @@
-import Card from "./ui/Card";
+import Card from "./Card";
 import { FiGlobe, FiCpu, FiSmartphone, FiCode } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -55,7 +55,7 @@ export default function Services() {
               key={index}
               whileHover={{ scale: 1.03 }}
             >
-              <Card>
+              <Card delay={index * 0.1}>
                 <div className="text-[#D4AF37] mb-6">
                   {service.icon}
                 </div>

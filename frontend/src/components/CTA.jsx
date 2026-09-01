@@ -1,4 +1,4 @@
-import Button from "./ui/Button";
+import Button from "./Button";
 import { motion } from "framer-motion";
 
 export default function CTA() {
