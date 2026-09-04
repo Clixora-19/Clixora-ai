@@ -1,9 +1,3 @@
-// import OrbitRing from "./Hero/OrbitRing";
-// import AICore from "./Hero/AICore";
-{/* <OrbitRing /> */}
-{/* <OrbitRing /> */}
-{/* <FloatingCard ... /> */}
-{/* <AICore /> */}
 import {
   Bot,
   Globe,
@@ -11,6 +5,7 @@ import {
   Smartphone,
   Laptop,
 } from "lucide-react";
+
 import OrbitRing from "./Hero/OrbitRing";
 import AICore from "./Hero/AICore";
 import FloatingCard from "./FloatingCard";
@@ -18,12 +13,33 @@ import { motion } from "framer-motion";
 
 export default function AIHero() {
   return (
-    <div className="relative flex items-center justify-center w-[560px] h-[560px]">
+    <div className="
+      relative
+      w-[560px]
+      h-[560px]
+      flex
+      items-center
+      justify-center
+      scale-[0.58]
+      sm:scale-[0.72]
+      md:scale-[0.88]
+      lg:scale-100
+      origin-center
+      shrink-0
+    ">
+
+      {/* Orbit Ring */}
       <OrbitRing />
 
       {/* OUTER GLOW */}
-      <div className="absolute w-[500px] h-[500px] rounded-full bg-[#D4AF37]/10 blur-[120px]" />
-      <OrbitRing />
+      <div className="
+        absolute
+        w-[500px]
+        h-[500px]
+        rounded-full
+        bg-[#D4AF37]/10
+        blur-[120px]
+      " />
 
       {/* OUTER RING */}
       <motion.div
@@ -33,7 +49,14 @@ export default function AIHero() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute rounded-full border border-[#D4AF37]/40 animate-pulse"
+        className="
+          absolute
+          w-[500px]
+          h-[500px]
+          rounded-full
+          border
+          border-[#D4AF37]/40
+        "
       />
 
       {/* SECOND RING */}
@@ -44,7 +67,14 @@ export default function AIHero() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute rounded-full border border-[#D4AF37]/40 animate-pulse"
+        className="
+          absolute
+          w-[400px]
+          h-[400px]
+          rounded-full
+          border
+          border-[#D4AF37]/30
+        "
       />
 
       {/* THIRD RING */}
@@ -55,8 +85,17 @@ export default function AIHero() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute rounded-full border border-[#D4AF37]/40 animate-pulse"
+        className="
+          absolute
+          w-[300px]
+          h-[300px]
+          rounded-full
+          border
+          border-[#D4AF37]/30
+        "
       />
+
+      {/* CONNECTING LINES */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none"
         viewBox="0 0 560 560"
@@ -70,16 +109,14 @@ export default function AIHero() {
           stroke="#D4AF37"
           strokeWidth="2"
           strokeDasharray="8 8"
-          animate={{
-            strokeDashoffset: [16, 0],
-          }}
+          animate={{ strokeDashoffset: [16, 0] }}
           transition={{
             repeat: Infinity,
             duration: 2,
             ease: "linear",
           }}
         />
-      
+
         <motion.line
           x1="280"
           y1="280"
@@ -88,54 +125,52 @@ export default function AIHero() {
           stroke="#D4AF37"
           strokeWidth="2"
           strokeDasharray="8 8"
-          animate={{
-            strokeDashoffset: [16, 0],
-          }}
+          animate={{ strokeDashoffset: [16, 0] }}
           transition={{
             repeat: Infinity,
             duration: 2,
             ease: "linear",
           }}
         />
-      
+
         <motion.line
           x1="280"
           y1="280"
-          x2="500"
+          x2="490"
           y2="170"
           stroke="#D4AF37"
           strokeWidth="2"
           strokeDasharray="8 8"
-          animate={{
-            strokeDashoffset: [16, 0],
-          }}
+          animate={{ strokeDashoffset: [16, 0] }}
           transition={{
             repeat: Infinity,
             duration: 2,
             ease: "linear",
           }}
         />
-      
+
       </svg>
 
-      {/* Floating Cards */}
 
+      {/* AI CHATBOT */}
       <FloatingCard
-      icon={Bot}
-      title="AI Chatbot"
-      x="38%"
-      y="-10%"
-      delay={0}
+        icon={Bot}
+        title="AI Chatbot"
+        x="38%"
+        y="-10%"
+        delay={0}
       />
 
+      {/* WEBSITES */}
       <FloatingCard
         icon={Globe}
         title="Websites"
-        x="-18%"
+        x="-10%"
         y="22%"
         delay={0.5}
       />
-      
+
+      {/* AI AUTOMATION */}
       <FloatingCard
         icon={BrainCircuit}
         title="AI Automation"
@@ -143,28 +178,28 @@ export default function AIHero() {
         y="18%"
         delay={1}
       />
-      
+
+      {/* SOFTWARE */}
       <FloatingCard
         icon={Laptop}
         title="Software"
-        x="-16%"
-        y="74%"
+        x="-8%"
+        y="72%"
         delay={1.5}
       />
-      
+
+      {/* MOBILE APPS */}
       <FloatingCard
         icon={Smartphone}
         title="Mobile Apps"
         x="62%"
-        y="74%"
+        y="72%"
         delay={2}
       />
-      
-      
 
       {/* CENTER AI */}
       <AICore />
-        
+
     </div>
   );
 }
